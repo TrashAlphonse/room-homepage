@@ -216,19 +216,19 @@ button:focus {
     padding: calc(2rem + 4vmax);
 }
 
-.hero__content--title {
+.hero__title {
     font-size: clamp(2.5rem, 2.5vw, 4rem);
     font-weight: 700;
     line-height: 1.2;
 }
 
-.hero__content--desc {
+.hero__desc {
     font-size: clamp(1rem, 1vw, 1.5rem);
     margin: 3rem 0;
     color: var(--color-gray-dark);
 }
 
-.hero__content--cta:any-link {
+.hero__cta:any-link {
     position: relative;
     color: var(--color-black);
     text-transform: uppercase;
@@ -239,12 +239,12 @@ button:focus {
     transition: all .35s;
 }
 
-.hero__content--cta:hover,
-.hero__content--cta:active {
+.hero__cta:hover,
+.hero__cta:active {
     color: var(--color-gray-dark);
 }
 
-.hero__content--cta::after {
+.hero__cta::after {
     content: "";
     position: absolute;
     top: 0;
@@ -255,8 +255,8 @@ button:focus {
     transition: transform .35s;
 }
 
-.hero__content--cta:hover::after,
-.hero__content--cta:active::after {
+.hero__cta:hover::after,
+.hero__cta:active::after {
     transform: translateX(1rem);
 }
 
@@ -278,31 +278,31 @@ button:focus {
     grid-column: 2;
 }
 
-.about__content--title {
+.about__title {
     font-size: 1.2rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
 }
 
-.about__content--desc {
+.about__desc {
     font-size: clamp(1rem, 1vw, 1.5rem);
     margin: 1rem 0 0;
     color: var(--color-gray-dark);
 }
 
-.about__image-dark {
+.about__image--dark {
     grid-column: 1;
 }
 
-.about__image-light {
+.about__image--light {
     grid-column: 3;
 }
 
 
 
-.about__image-light img,
-.about__image-dark img {
+.about__image--light img,
+.about__image--dark img {
     width: 100%;
     height: 100%;
 }
@@ -379,7 +379,7 @@ button:focus {
         z-index: 2;
     }
 
-    .header__content--logo {
+    .header__logo {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -420,7 +420,7 @@ button:focus {
         background-color: var(--color-white);
     }
 
-    #header.active .header__content--logo {
+    #header.active .header__logo {
         display: none;
     }
 
@@ -468,8 +468,8 @@ button:focus {
         padding-left: 2rem;
     }
 
-    .hero__content--desc,
-    .about__content--desc {
+    .hero__desc,
+    .about__desc {
         font-size: 1.5rem;
     }
 
@@ -478,7 +478,7 @@ button:focus {
         grid-template-rows: 26rem min-content 26rem;
     }
 
-    .about__image-dark {
+    .about__image--dark {
         grid-column: 1 / -1;
         grid-row: 1;
     }
@@ -489,7 +489,7 @@ button:focus {
         grid-column: 1 / -1;
     }
 
-    .about__image-light {
+    .about__image--light {
         grid-row: 3;
         grid-column: 1 / -1;
     }
