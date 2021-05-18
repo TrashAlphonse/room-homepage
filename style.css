@@ -80,6 +80,7 @@ button:focus {
     grid-row: 1;
     z-index: 1;
     padding: 5rem;
+    align-self: start;
 }
 
 .header__content {
